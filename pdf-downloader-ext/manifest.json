@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "PDF Results Downloader",
+  "version": "1.0",
+  "description": "Downloads PDF links from search results",
+  "permissions": ["activeTab", "downloads", "scripting"],
+  "host_permissions": ["https://www.bing.com/*", "https://www.google.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Download PDFs"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
